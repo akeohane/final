@@ -1,0 +1,21 @@
+.navbar-nav li a {
+    line-height: 50px;
+   }
+
+   .logo{
+    line-height: 50px;
+    padding-bottom: 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+   }
+   .navbar-nav{
+    display:flex;
+    align-items:center;
+  }
+  .navbar-brand {
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+  }

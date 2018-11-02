@@ -1,0 +1,37 @@
+html,
+body {
+    height: 100%;
+    width: 100%
+}
+
+.eventCard{
+    background-color: #688da2;
+}
+
+#heroImg{
+    max-height: 600px;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+    width: 100%;
+    max-height: 600px;
+}
+
+.carousel-inner {
+    height: 100%;
+    width: 100%;
+    max-height: 600px;
+}
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    /* max-height: 600px; */
+    }
+    
