@@ -7,6 +7,16 @@
   height: 40vmin;
 }
 
+.yellow{
+  background-color: #f6af00;
+  color: white;
+  height: 30px;
+  width:  80px;
+  border-radius: 4px;
+  text-align: center;
+  
+}
+
 #heroImage {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i1.wp.com/thefreshimages.com/wp-content/uploads/2017/12/lord-shiva-hd-images.jpg");
@@ -91,5 +101,8 @@ body {
   min-height: 50px;
   line-height: 50px;
   color: white;
+  font-family: "Paytone One";
+  text-transform: lowercase;
 
 }
+

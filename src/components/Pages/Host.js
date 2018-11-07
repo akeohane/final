@@ -6,7 +6,6 @@ import NewEventForm from "../NewEventForm";
 import axios from 'axios';
 import Hero1 from '../Hero1';
 
-
 class Host extends Component {
 
   constructor(props) {
@@ -120,7 +119,6 @@ class Host extends Component {
       }));
     };
 
-    // When the component mounts, get a list of all available base breeds and update this.state.breeds
     componentDidMount() {
       const thisUsername = localStorage.getItem('thisUsername')
       console.log(thisUsername);
@@ -223,9 +221,11 @@ class Host extends Component {
         <div>
           <Hero1></Hero1>
         <Container style={{ minHeight: "80%" }}>
+        <h3 className="card-header" align="center">Your Hosted Events</h3>
       <EventAcord deleteAttendee={this.deleteAttendee} deleteEvent={this.deleteEvent} yourHE={this.state.yourHostedEvents} ></EventAcord>
         </Container>
         <Container  style={{ minHeight: "80%" }}>
+        <h3 className="card-header" align="center">Host New Event</h3>
         <NewEventForm handleInputChange={this.handleInputChange} handleFormSubmit={this.handleFormSubmit}></NewEventForm>
         </Container>
       </div>

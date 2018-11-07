@@ -7,6 +7,15 @@ const divStyle = {
   backgroundImage: 'linear-gradient(white, black)'
   /* Set a specific height */
 };
+const text1= {
+  fontFamily: "Paytone One",
+  fontSize: "100px",
+  textTransform: "lowercase"
+};
+
+const text2= {
+  fontFamily: "Droid Sans" 
+};
 
 const YourEventAcord = props => (
   <div className="cunt">
@@ -17,11 +26,11 @@ const YourEventAcord = props => (
     <img style={divStyle} id="topImg" width={900} height={500} alt="900x500" src={results.eventPhoto} />
     <Carousel.Caption>
 
-                 <h2 >{results.name}</h2>
-                 <h3 >Event Type: {results.type}</h3>
-                 <h4>Time: {results.time} </h4>
-                 <h4>Location: {results.actualLocation} </h4>
-                 <p>{results.description} </p>
+                 <h1 style={text1} >{results.name}</h1>
+                 <h3 style={text2}>Event Type: {results.type}</h3>
+                 <h4 style={text2}>Time: {results.time} </h4>
+                 <h4 style={text2}>Location: {results.locationAprox} </h4>
+                 <p style={text2}>{results.description} </p>
                  
                  <Button onClick={()=>props.requestToAttend(results,results._id,results.hostId)} >Attend</Button>
 

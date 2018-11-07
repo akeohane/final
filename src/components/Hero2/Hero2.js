@@ -1,9 +1,9 @@
 import React from "react";
-import "./Hero1.css";
+import "./Hero2.css";
 import Jumbotron from 'react-bootstrap/lib/Jumbotron';
 
 const divStyle = {
-  backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://preview.ibb.co/dkmS8L/alcohol-alcoholic-bar-16408.jpg")',
+  backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://preview.ibb.co/neP7hf/adults-backlit-bonding-1049317.jpg")',
   backgroundRepeat  : 'no-repeat',
   backgroundPosition: 'center',
   position: 'relative',
@@ -31,19 +31,19 @@ const text2= {
 }
 
 
-const Hero1 = props => (
+const Hero2 = props => (
   <div>
 {/* <div style={divStyle }id="heroImage"> <h1>hello</h1></div> */}
 
 
 <Jumbotron style={divStyle}>
 <div style={textStyle}>
-    <h1 style={text1} >host with the most</h1>
-    <p style={text2} >If you host it, they might come...</p>
+    <h1 style={text1} >your profile</h1>
+    <p style={text2} >Add interests to discover events</p>
 </div>
 </Jumbotron>
 </div>
   );
   
-  export default Hero1;
+  export default Hero2;
   

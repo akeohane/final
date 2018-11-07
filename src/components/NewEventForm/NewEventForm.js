@@ -8,9 +8,6 @@ import Panel from 'react-bootstrap/lib/Panel';
 const NewEventForm = props => (
 <div>
   <Panel>
-    <Panel.Heading>
-      <Panel.Title componentClass="h3">Create New Event</Panel.Title>
-    </Panel.Heading>
     <Panel.Body><form> 
   <FormGroup bsSize="large">
     <FormControl onChange={props.handleInputChange} type="text" name="name" placeholder="Name of Event" />

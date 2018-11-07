@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import Nav from "../Nav";
 import Container from "../Container";
+import Hero1 from "../Hero1";
 import AddAnInterest from "../AddAnInterest";
+import UserProfile from "../UserProfile";
 import axios from 'axios';
+import Hero2 from "../Hero2";
 
 
 class MyProfile extends Component {
@@ -15,6 +18,8 @@ class MyProfile extends Component {
           interests:[],
           interestedEvents: [],
           events: [],
+          name: "",
+          photo: "",
       };
     }
     logout = () => {
@@ -22,6 +27,24 @@ class MyProfile extends Component {
       window.location.reload();
     };
     
+    updateInterests = () => {
+      const thisId = localStorage.getItem('_id')
+      axios.get('/api/user/' +thisId)
+      .then((response) => {
+        console.log(response.data)
+        console.log(response);
+        this.setState({
+          interests: response.data[0].interests,
+          name: response.data[0].name,
+          photo: response.data[0].avImgLink,
+        });
+        console.log(this.state)
+
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    };
   
     popYourEvents = ()=>{
       const thisUsername = localStorage.getItem('thisUsername')
@@ -59,6 +82,13 @@ class MyProfile extends Component {
               interest: newInterest
             }
           })
+          .then((response) => {
+          this.updateInterests()
+    
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
     };
   
   
@@ -75,7 +105,9 @@ class MyProfile extends Component {
           console.log(response.data)
           console.log(response);
           this.setState({
-            interests: response.data[0].interests
+            interests: response.data[0].interests,
+            name: response.data[0].name,
+            photo: response.data[0].avImgLink,
           });
           console.log(this.state)
 
@@ -108,7 +140,10 @@ class MyProfile extends Component {
           <div>
           <Nav></Nav>
           <div>
+          <Hero2></Hero2>
           <Container style={{ minHeight: "80%" }}>
+          <h3 className="card-header" align="center">Your Profile</h3>
+          <UserProfile name={this.state.name} avImgLink={this.state.photo} interests={this.state.interests}></UserProfile>
                 <AddAnInterest  handleInputChange={this.handleInputChange} handleFormSubmit={this.handleFormSubmit}>
 
                 </AddAnInterest>

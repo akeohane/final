@@ -260,12 +260,12 @@ class App extends Component {
       <Container>
         <Row>
         <Col size="lg-6" style={{ marginTop: 30,}}>
-              <h3 className="card-header" onClick={this.popYourEvents} align="center">All Events</h3>
+              <h3 className="card-header" align="center">All Events</h3>
               <AllEventAcord requestToAttend={this.requestToAttend} events={this.state.events} >
               </AllEventAcord>
           </Col>
           <Col size="lg-6" style={{ marginTop: 30,}}>
-              <h3 className="card-header" onClick={this.createEvent} align="center">Your Events</h3>
+              <h3 className="card-header" align="center">Your Events</h3>
               <YourEventAcord id={this.state.id} bail={this.bail} yourName={this.state.name} events={this.state.yourEvents} >
               </YourEventAcord>
           </Col>
@@ -273,7 +273,7 @@ class App extends Component {
         
         <h3 className="card-header" align="center">&nbsp;
                {localStorage.getItem('jwtToken') &&
-                <button class="btn btn-primary" onClick={this.logout}>Logout</button>
+                <button class="btn btn-primary yellow" onClick={this.logout}>Logout</button>
               }</h3>
       </Container>
     </div>

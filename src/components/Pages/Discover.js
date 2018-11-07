@@ -10,7 +10,8 @@ class Discover extends Component {
       interests:[],
       interestedEvents: [],
       events: [],
-      show: false
+      show: false,
+      name: ""
     };
 
     requestToAttend = (eventArray,eventId,hostId) =>{
@@ -22,7 +23,8 @@ class Discover extends Component {
         const newUser ={
           username: thisUsername,
           _id: thisId,
-          name: this.state.name
+          name: this.state.name,
+          avImgLink: this.state.avImgLink
         };
     
         function updatEventInfo(){
@@ -91,7 +93,9 @@ class Discover extends Component {
       .then((response) => {
         console.log("user data: "+ response.data)
         this.setState({
-          interests: response.data[0].interests
+          interests: response.data[0].interests,
+          avImgLink: response.data[0].avImgLink,
+          name:response.data[0].name
         });
       })
       .catch(function (error) {
