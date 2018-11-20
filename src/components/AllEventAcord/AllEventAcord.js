@@ -24,7 +24,7 @@ const text3= {
 };
 
   const AllEventAcord = props => (
-    <div className="cunt">
+    <div className="placeholder">
     {props.events.map(results => (
           <Panel id="collapsible-panel-example-2" defaultCollapsed>
           <Panel.Heading style={panelHeadStyle}>
