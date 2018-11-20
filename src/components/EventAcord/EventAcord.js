@@ -20,7 +20,7 @@ const text3= {
 };
 
   const EventAcord = props => (
-    <div className="cunt">
+    <div className="placeholder">
     {props.yourHE.map(results => (
           <Panel id="collapsible-panel-example-2" defaultCollapsed>
           <Panel.Heading>
