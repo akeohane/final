@@ -5,7 +5,7 @@ import Media from 'react-bootstrap/lib/Media';
 
 const EventInvite = (props) => (
 
-<div className="cunt">
+<div className="placeholder">
     {props.attendees.map(results => (
   <Media>
   <Media.Left>
