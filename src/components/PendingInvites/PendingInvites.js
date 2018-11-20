@@ -2,7 +2,7 @@ import React from "react";
 import "./PendingInvites.css";
 
 const PendingInvite = props => (
-<div className="cunt">    
+<div className="placeholder">    
 <div className="card w-75">
   <div className="card-body">
     <h5 className="card-title">Card title</h5>
