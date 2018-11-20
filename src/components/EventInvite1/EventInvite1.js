@@ -17,7 +17,7 @@ const text3= {
 
 const EventInvite1 = (props) => (
 
-<div className="cunt">
+<div className="placeholder">
     {props.attendees.map(results => (
   <Media>
   <Media.Left>
