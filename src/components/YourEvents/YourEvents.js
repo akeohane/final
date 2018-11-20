@@ -2,7 +2,7 @@ import React from "react";
 import "./YourEvents.css";
 
 const YourEvents = props => (
-<div className="cunt">
+<div className="placeholder">
 {props.events.map(results => (
       <div class="card w-75">
       <div class="card-body">
