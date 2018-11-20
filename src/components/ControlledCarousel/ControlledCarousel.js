@@ -18,7 +18,7 @@ const text2= {
 };
 
 const YourEventAcord = props => (
-  <div className="cunt">
+  <div className="placeholder">
    <Carousel>
   {props.events.map(results => (
  
