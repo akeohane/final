@@ -1,5 +1,3 @@
-mongo ds117271.mlab.com:17271/heroku_cxp4vd91 -u heroku_cxp4vd91 -p Ne.Co6441!
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
