@@ -5,7 +5,7 @@ import Media from 'react-bootstrap/lib/Media';
 
 const UserProfile = (props) => (
 
-<div className="cunt">
+<div className="placeholder">
   <Media>
   <Media.Left>
     <img width={300} height={300} src={props.avImgLink} alt="thumbnail" />
